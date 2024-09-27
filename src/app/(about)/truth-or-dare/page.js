@@ -49,7 +49,7 @@ const TruthDare = () => {
   const onSubmitBtn = async () => {
     setApiLoading(true);
     if(playerNames.length > 0){
-      const res = await fetch(`http://127.0.0.1:5000/api/tds/answer`, {
+      const res = await fetch(`https://ai-games-self.vercel.app/api/tds/answer`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
